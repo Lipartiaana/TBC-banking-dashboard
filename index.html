@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>თიბისი ბანკი</title>
+    <link rel="icon" type="image/png" href="./Assets/logo.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body id="page">
+    <button
+      class="change-mode"
+      onclick="document.getElementById('page').classList.toggle('dark-mode')"
+    >
+      <img src="./Assets/dark-mode.png" alt="მუქი დიზაინი" />
+    </button>
+    <input type="checkbox" id="menu-toggle" hidden />
+    <label for="menu-toggle" class="menu-btn"> ☰ </label>
+    <div class="responsive-menu">
+      <div class="responsive-menu-container">
+        <div class="user-info">
+          <img class="user-img" src="./Assets/user.png" alt="მომხმარებელი" />
+          <p>ანა ლიპარტია</p>
+        </div>
+        <menu class="menu">
+          <ul class="menu-links">
+            <li>
+              <img src="./Assets/home-icon.png" alt="მთავარი" />
+              <a href="./index.html">მთავარი</a>
+            </li>
+            <li>
+              <img src="./Assets/transactions-icon.png" alt="მთავარი" />
+              <a href="./html/transactions.html">ტრანზაქციები</a>
+            </li>
+          </ul>
+        </menu>
+      </div>
+      <div class="bottom-menu">
+        <ul>
+          <li>
+            <img src="../Assets/settings.png" alt="პარამეტრები" /><a
+              >პარამეტრები</a
+            >
+          </li>
+          <li>
+            <img src="../Assets/profile.png" alt="პროფილი" /><a>პროფილი</a>
+          </li>
+          <li>
+            <button class="log-out-btn">
+              <img src="../Assets/log-out.png" alt="გამოსვლა" />გამოსვლა
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dashboard">
+      <div class="left-side">
+        <div class="menu-container">
+          <div class="user-info">
+            <img class="user-img" src="./Assets/user.png" alt="მომხმარებელი" />
+            <p>ანა ლიპარტია</p>
+          </div>
+          <menu class="menu">
+            <ul class="menu-links">
+              <li>
+                <img src="./Assets/home-icon.png" alt="მთავარი" />
+                <a href="./index.html">მთავარი</a>
+              </li>
+              <li>
+                <img src="./Assets/transactions-icon.png" alt="მთავარი" />
+                <a href="./html/transactions.html">ტრანზაქციები</a>
+              </li>
+            </ul>
+          </menu>
+        </div>
+        <div class="bottom-menu">
+          <ul>
+            <li>
+              <img src="../Assets/settings.png" alt="პარამეტრები" /><a
+                >პარამეტრები</a
+              >
+            </li>
+            <li>
+              <img src="../Assets/profile.png" alt="პროფილი" /><a>პროფილი</a>
+            </li>
+            <li>
+              <button class="log-out-btn">
+                <img src="../Assets/log-out.png" alt="გამოსვლა" />გამოსვლა
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="logo-container">
+          <img src="./Assets/logo.png" alt="თიბისი" />
+          <h3>თიბისი</h3>
+        </div>
+        <div class="cards-container">
+          <div class="current-balance">
+            <p>ხელმისაწვდომი</p>
+            <span class="balance">5432.10 ₾</span>
+          </div>
+          <div class="cards">
+            <div class="card" id="card-1">
+              <img
+                class="card-image"
+                src="./Assets/card-1.png"
+                alt="ბარათი-1"
+              />
+              <div class="card-content">
+                <img
+                  src="./Assets/visa-icon.png"
+                  alt="Visa"
+                  class="visa-logo"
+                />
+                <div class="card-number">**** **** **** 1234</div>
+                <div class="card-name">ANA LIPARTIA</div>
+                <div class="card-expiry">05 / 2027</div>
+              </div>
+              <div class="card-description">
+                <p>ჩემი ბარათი</p>
+                <p>STUDENT CARD</p>
+              </div>
+              <span class="balance">3899.25 ₾</span>
+            </div>
+            <div class="card" id="card-2">
+              <img
+                class="card-image"
+                src="./Assets/card-2.png"
+                alt="ბარათი-2"
+              />
+              <div class="card-content">
+                <img
+                  src="./Assets/visa-icon.png"
+                  alt="Visa"
+                  class="visa-logo"
+                />
+                <div class="card-number">**** **** **** 5678</div>
+                <div class="card-name">ANA LIPARTIA</div>
+                <div class="card-expiry">02 / 2029</div>
+              </div>
+              <div class="card-description">
+                <p>ჩემი ბარათი</p>
+                <p>STUDENT CARD</p>
+              </div>
+              <span class="balance">1532.85 ₾</span>
+            </div>
+            <div class="card" id="add-card">
+              <p>დაამატე ბარათი</p>
+              <img src="./Assets/add-btn.png" alt="დაამატე ბარათი" />
+            </div>
+          </div>
+        </div>
+        <div class="statistics">
+          <div class="last-transactions">
+            <table class="transaction-table">
+              <caption class="table-title">
+                ბოლო ტრანზაქციები
+              </caption>
+              <thead>
+                <tr>
+                  <th>ტიპი</th>
+                  <th>თარიღი</th>
+                  <th>კატეგორია</th>
+                  <th>აღწერა</th>
+                  <th class="right">თანხა</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="expense">
+                  <td><span class="dot expense"></span></td>
+                  <td>10.07.2025</td>
+                  <td>საოჯახო ხარჯი</td>
+                  <td>სუპერმარკეტი "სპარი"</td>
+                  <td class="right">-19.26 ₾</td>
+                </tr>
+                <tr class="expense">
+                  <td><span class="dot expense"></span></td>
+                  <td>9.07.2025</td>
+                  <td>საყიდლები</td>
+                  <td>ტექნიკის მაღაზია "ალტა"</td>
+                  <td class="right">-175.25 ₾</td>
+                </tr>
+                <tr class="expense">
+                  <td><span class="dot expense"></span></td>
+                  <td>9.07.2025</td>
+                  <td>საოჯახო ხარჯი</td>
+                  <td>სუპერმარკეტი "ორი ნაბიჯი"</td>
+                  <td class="right">-25.57 ₾</td>
+                </tr>
+                <tr class="income">
+                  <td><span class="dot income"></span></td>
+                  <td>8.07.2025</td>
+                  <td>ხელფასი</td>
+                  <td>ტექ კომპანია შპს "IT"</td>
+                  <td class="right">+1500.00 ₾</td>
+                </tr>
+                <tr class="expense">
+                  <td><span class="dot expense"></span></td>
+                  <td>8.07.2025</td>
+                  <td>კაფე</td>
+                  <td>კაფე "მზიური"</td>
+                  <td class="right">-5.07 ₾</td>
+                </tr>
+                <tr class="expense">
+                  <td><span class="dot expense"></span></td>
+                  <td>8.07.2025</td>
+                  <td>კომუნალური</td>
+                  <td>თელმიკო</td>
+                  <td class="right">-72.50 ₾</td>
+                </tr>
+              </tbody>
+            </table>
+            <a class="all-btn" href="./html/transactions.html"
+              ><button class="transaction-btn">ყველა ტრანზაქცია</button></a
+            >
+          </div>
+          <div class="month-statistics">
+            <div class="month-ststistics-title">
+              <h4>ჩემი ხარჯები</h4>
+              <p>თვის ჯამური ხარჯი: <span class="amount">3367.08 ₾</span></p>
+            </div>
+            <div class="month-chart">
+              <div class="pie-chart"></div>
+              <div class="category-list">
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #3498db"
+                    ></div>
+                    <p class="category-name">გადარიცხვები</p>
+                  </div>
+                  <span class="amount">1487.00 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #ddc80f"
+                    ></div>
+                    <p class="category-name">საოჯახო ხარჯი</p>
+                  </div>
+                  <span class="amount">759.45 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #f565be"
+                    ></div>
+                    <p class="category-name">საყიდლები</p>
+                  </div>
+                  <span class="amount">352.00 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #f7c41e"
+                    ></div>
+                    <p class="category-name">კომუნალური გადასახადები</p>
+                  </div>
+                  <span class="amount">284.36 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #f1361d"
+                    ></div>
+                    <p class="category-name">რესტორანი, კაფე, ბარი</p>
+                  </div>
+                  <span class="amount">214.33 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #9b59b6"
+                    ></div>
+                    <p class="category-name">ჯანმრთელობა და სილამაზე</p>
+                  </div>
+                  <span class="amount">187.18 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #29a809"
+                    ></div>
+                    <p class="category-name">გართობა</p>
+                  </div>
+                  <span class="amount">47.98 ₾</span>
+                </div>
+                <div class="category-item">
+                  <div class="left">
+                    <div
+                      class="category-color"
+                      style="background: #95a5a6"
+                    ></div>
+                    <p class="category-name">სხვა</p>
+                  </div>
+                  <span class="amount">35.78 ₾</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="side-content"></div>
+    </div>
+  </body>
+</html>

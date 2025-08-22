@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>თიბისი ბანკი</title>
+    <link rel="icon" type="image/png" href="../Assets/logo.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body id="page">
+    <button
+      class="change-mode"
+      onclick="document.getElementById('page').classList.toggle('dark-mode')"
+    >
+      <img src="../Assets/dark-mode.png" alt="მუქი დიზაინი" />
+    </button>
+    <input type="checkbox" id="menu-toggle" hidden />
+    <label for="menu-toggle" class="menu-btn"> ☰ </label>
+    <div class="responsive-menu">
+      <div class="responsive-menu-container">
+        <div class="user-info">
+          <img class="user-img" src="../Assets/user.png" alt="მომხმარებელი" />
+          <p>ანა ლიპარტია</p>
+        </div>
+        <menu class="menu">
+          <ul class="menu-links">
+            <li>
+              <img src="../Assets/home-icon.png" alt="მთავარი" />
+              <a href="../index.html">მთავარი</a>
+            </li>
+            <li>
+              <img src="../Assets/transactions-icon.png" alt="მთავარი" />
+              <a href="../html/transactions.html">ტრანზაქციები</a>
+            </li>
+          </ul>
+        </menu>
+      </div>
+      <div class="bottom-menu">
+        <ul>
+          <li>
+            <img src="../Assets/settings.png" alt="პარამეტრები" /><a
+              >პარამეტრები</a
+            >
+          </li>
+          <li>
+            <img src="../Assets/profile.png" alt="პროფილი" /><a>პროფილი</a>
+          </li>
+          <li>
+            <button class="log-out-btn">
+              <img src="../Assets/log-out.png" alt="გამოსვლა" />გამოსვლა
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dashboard">
+      <div class="left-side">
+        <div class="menu-container">
+          <div class="user-info">
+            <img class="user-img" src="../Assets/user.png" alt="მომხმარებელი" />
+            <p>ანა ლიპარტია</p>
+          </div>
+          <menu class="menu">
+            <ul class="menu-links">
+              <li>
+                <img src="../Assets/home-icon.png" alt="მთავარი" />
+                <a href="../index.html">მთავარი</a>
+              </li>
+              <li>
+                <img src="../Assets/transactions-icon.png" alt="მთავარი" />
+                <a href="./transactions.html">ტრანზაქციები</a>
+              </li>
+            </ul>
+          </menu>
+        </div>
+        <div class="bottom-menu">
+          <ul>
+            <li>
+              <img src="../Assets/settings.png" alt="პარამეტრები" /><a
+                >პარამეტრები</a
+              >
+            </li>
+            <li>
+              <img src="../Assets/profile.png" alt="პროფილი" /><a>პროფილი</a>
+            </li>
+            <li>
+              <button class="log-out-btn">
+                <img src="../Assets/log-out.png" alt="გამოსვლა" />გამოსვლა
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="logo-container">
+          <img src="../Assets/logo.png" alt="თიბისი" />
+          <h3>თიბისი</h3>
+        </div>
+        <table class="transaction-table">
+          <caption class="table-title">
+            ტრანზაქციები
+          </caption>
+          <thead>
+            <tr>
+              <th>ტიპი</th>
+              <th>თარიღი</th>
+              <th>
+                <img
+                  class="cat-img cat-head"
+                  src="../Assets/transactions-icon.png"
+                  alt=""
+                />
+                <p>კატეგორია</p>
+              </th>
+              <th>აღწერა</th>
+              <th class="right">თანხა</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>10.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-house">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/house_icon.png"
+                    alt="საოჯახო ხარჯი"
+                  />
+                </div>
+                <p>საოჯახო ხარჯი</p>
+              </td>
+              <td>სუპერმარკეტი "სპარი"</td>
+              <td class="right">-19.26 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>9.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-shop">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/shop_icon.png"
+                    alt="საყიდლები"
+                  />
+                </div>
+                <p>საყიდლები</p>
+              </td>
+              <td>ტექნიკის მაღაზია "ალტა"</td>
+              <td class="right">-175.25 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>9.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-house">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/house_icon.png"
+                    alt="საოჯახო ხარჯი"
+                  />
+                </div>
+                <p>საოჯახო ხარჯი</p>
+              </td>
+              <td>სუპერმარკეტი "ორი ნაბიჯი"</td>
+              <td class="right">-25.57 ₾</td>
+            </tr>
+            <tr class="income">
+              <td><span class="type-badge income">შემოსავალი</span></td>
+              <td>8.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-transfer">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/money_icon.png"
+                    alt="ხელფასი"
+                  />
+                </div>
+                <p>ხელფასი</p>
+              </td>
+              <td>ტექ კომპანია შპს "IT"</td>
+              <td class="right">+1500.00₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>8.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-restaurant">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/restaurant_icon.png"
+                    alt="კაფე"
+                  />
+                </div>
+                <p>კაფე</p>
+              </td>
+              <td>კაფე "მზიური"</td>
+              <td class="right">-5.07 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>8.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-utilities">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/light_icon.png"
+                    alt="კომუნალური"
+                  />
+                </div>
+                <p>კომუნალური</p>
+              </td>
+              <td>თელმიკო</td>
+              <td class="right">-72.50 ₾</td>
+            </tr>
+            <tr class="income">
+              <td><span class="type-badge income">შემოსავალი</span></td>
+              <td>7.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-transfer">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/transfer_icon.png"
+                    alt="გადარიცხვა"
+                  />
+                </div>
+                <p>გადარიცხვა</p>
+              </td>
+              <td>თამარ გიორგობიანი</td>
+              <td class="right">+110.00 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>6.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-health">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/heart_icon.png"
+                    alt="ჯანმრთელობა"
+                  />
+                </div>
+                <p>ჯანმრთელობა</p>
+              </td>
+              <td>აფთიაქი "PSP"</td>
+              <td class="right">-32.25 ₾</td>
+            </tr>
+            <tr class="income">
+              <td><span class="type-badge income">შემოსავალი</span></td>
+              <td>6.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-transfer">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/transfer_icon.png"
+                    alt="გადარიცხვა"
+                  />
+                </div>
+                <p>გადარიცხვა</p>
+              </td>
+              <td>ნანა აბაშიძე</td>
+              <td class="right">+200.00 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>6.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-house">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/house_icon.png"
+                    alt="საოჯახო ხარჯი"
+                  />
+                </div>
+                <p>საოჯახო ხარჯი</p>
+              </td>
+              <td>სუპერმარკეტი "ნიკორა"</td>
+              <td class="right">-84.60 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>5.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-fun">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/music_icon.png"
+                    alt="გართობა"
+                  />
+                </div>
+                <p>გართობა</p>
+              </td>
+              <td>კინო, თბილისი მოლი</td>
+              <td class="right">-20.00 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>5.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-transfer">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/transfer_icon.png"
+                    alt="გადარიცხვა"
+                  />
+                </div>
+                <p>გადარიცხვა</p>
+              </td>
+              <td>თამარ გიორგობიანი</td>
+              <td class="right">-110.00 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>5.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-other">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/other_icon.png"
+                    alt="სხვა"
+                  />
+                </div>
+                <p>სხვა</p>
+              </td>
+              <td>ქსეროქსის მომსახურება</td>
+              <td class="right">-3.50 ₾</td>
+            </tr>
+            <tr class="income">
+              <td><span class="type-badge income">შემოსავალი</span></td>
+              <td>4.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-transfer">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/transfer_icon.png"
+                    alt="გადარიცხვა"
+                  />
+                </div>
+                <p>გადარიცხვა</p>
+              </td>
+              <td>მარიამ ბერიძე</td>
+              <td class="right">+200.00 ₾</td>
+            </tr>
+            <tr class="expense">
+              <td><span class="type-badge expense">ხარჯი</span></td>
+              <td>4.07.2025</td>
+              <td>
+                <div class="cat-icon-wrapper cat-color-restaurant">
+                  <img
+                    class="cat-img"
+                    src="../Assets/category-icons/restaurant_icon.png"
+                    alt="კაფე"
+                  />
+                </div>
+                <p>კაფე</p>
+              </td>
+              <td>კაფე "ვერონა"</td>
+              <td class="right">-55.27 ₾</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="side-content"></div>
+    </div>
+  </body>
+</html>
